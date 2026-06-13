@@ -1,0 +1,22 @@
+The landscape of Artificial Intelligence is rapidly shifting from passive text generation to autonomous Agentic AI systems. 
+Unlike traditional chatbots that require constant prompting, AI agents are designed to independently execute multi-step workflows to achieve a specific goal. The core architecture of an agile AI agent relies on an LLM acting as the central brain, handling reasoning and task decomposition. 
+To interact with the physical or digital world, these agents utilize tool-calling capabilities, allowing them to execute code, browse the web, or interface with external APIs. They also incorporate sophisticated memory modules, distinguishing between short-term conversational context and long-term historical data. 
+Through a continuous loop of planning, acting, and reflecting, the agent can dynamically evaluate its progress and correct course if a subtask fails. Semantic search plays a critical role in this ecosystem by enabling agents to efficiently query vector databases for relevant documentation on how to use unfamiliar APIs. Ultimately, by marrying dense knowledge retrieval with action-oriented execution, agentic frameworks transform static models into proactive digital coworkers.
+Artificial Intelligence has evolved significantly with the advent of Large Language Models that excel at generating human-like text.
+
+However, these models often face limitations, such as hallucinating facts or lacking access to real-time, proprietary data.
+To bridge this gap, Retrieval-Augmented Generation, commonly known as RAG, optimizes LLM outputs by querying an external knowledge base before generating a response.
+This process relies heavily on text embeddings, which are numerical vectors that capture the deep semantic meaning and contextual relationships of words.
+These high-dimensional vectors are stored and indexed in specialized vector databases, which are built for high-performance similarity searches.
+Unlike traditional keyword matching, semantic search utilizes these databases to understand the actual intent behind a user's query.
+
+By retrieving the most relevant document chunks based on conceptual similarity, the system injects precise context directly into the prompt.
+Consequently, the LLM can synthesize an accurate, factually grounded answer derived straight from the source material.
+Basic Retrieval-Augmented Generation architectures often struggle when user queries do not perfectly match the phrasing of the source documents.
+
+To solve this, advanced systems use a query rewriting step to generate multiple variations of a prompt before searching the database.
+
+Chunking strategy is highly critical because splitting text too small destroys context, while making chunks too large dilutes the specific information.
+
+Implementing a parent-child chunking strategy allows the system to search small, precise text snippets but pass larger, contextual blocks to the LLM.
+Evaluating a RAG model typically requires checking two distinct metrics called faithfulness, which measures factual accuracy, and answer relevance.
