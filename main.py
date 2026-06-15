@@ -19,8 +19,8 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 # ---------------------------
 
 API_URL = (
-    "https://api-inference.huggingface.co/models/"
-    "microsoft/Phi-3-mini-4k-instruct"
+    "https://router.huggingface.co/hf-inference/models/"
+    "Qwen/Qwen2.5-3B-Instruct"
 )
 
 headers = {
@@ -127,7 +127,10 @@ Answer:
         json=payload
     )
 
+    print("Status:", response.status_code)
+    print(response.text)
     result = response.json()
+    print(result)
 
     print("\nAI Answer:\n")
 

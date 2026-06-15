@@ -20,3 +20,5 @@ Chunking strategy is highly critical because splitting text too small destroys c
 
 Implementing a parent-child chunking strategy allows the system to search small, precise text snippets but pass larger, contextual blocks to the LLM.
 Evaluating a RAG model typically requires checking two distinct metrics called faithfulness, which measures factual accuracy, and answer relevance.
+
+captial of india is newdelhi
