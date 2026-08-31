@@ -1,5 +1,6 @@
 # 📚 RAGsystem
 
+![Last Commit](https://img.shields.io/github/last-commit/SwAstikAaa66/RAGsystem)
 
 > A **Retrieval-Augmented Generation (RAG)** system built with Python — combining the power of search + generation for smarter responses.
 
